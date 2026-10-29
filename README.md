@@ -145,6 +145,10 @@ claude plugin install tw-legal@tw-legal-skill
 
 下載本專案，把 `skills/tw-legal` 整個資料夾放到 `~/.claude/skills/`（Windows 是 `C:\Users\你的帳號\.claude\skills\`），再重新開啟 Claude Code。
 
+**用其他 AI 助手（例如 Codex）**
+
+見 [AGENTS.md](AGENTS.md)：安裝位置，以及和 Claude 版不同的地方。
+
 **選用：接 TLR 法律偵探**
 
 在 Claude 桌面版：Customize → Connectors → Add custom connector，網址填 `https://tlr.dr-legal.com.tw/mcp`，再依畫面完成授權。接上就表示你同意它的服務條款，請先自行閱讀。

@@ -10,6 +10,7 @@
 !/.gitattributes
 !/MANIFEST.sha256
 !/README.md
+!/AGENTS.md
 !/DISCLAIMER.md
 !/LICENSE
 !/THIRD_PARTY_NOTICES.md
