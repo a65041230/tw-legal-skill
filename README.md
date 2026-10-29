@@ -233,7 +233,7 @@ claude plugin install tw-legal@tw-legal-skill
 
 - Anthropic claude-for-legal、tern/taiwan-claude-legal
 - 全國法規資料庫、司法院裁判書系統
-- TLR 法律偵探
+- [TLR 法律偵探](https://tlr.dr-legal.com.tw)（原始碼：[aa0101181514/tw-legal-rag](https://github.com/aa0101181514/tw-legal-rag)）：本專案只說明如何連接它的服務，不含其程式或資料
 
 ## 回報錯誤
 

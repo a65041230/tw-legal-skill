@@ -19,6 +19,12 @@
 | anthropics/claude-for-legal | commit 4a6c651（2026-07-23） | references/08 | 只取與法域無關的工作方法，改寫成台灣版；美國法不採用 |
 | tern/taiwan-claude-legal | v1.1.0，commit 1edf508（2026-08-26） | references/10；`laws/` 快照與 `scripts/law_snapshot.py` 的做法 | 合約審查流程譯成繁體中文，條文逐條核對；快照改用本專案的腳本重抓，保留項、款分行，驗證 HTTPS 憑證，並多收 7 部程序法與特別法 |
 
+## 第三方服務（不隨附）
+
+| 服務 | 用在哪裡 | 說明 |
+|---|---|---|
+| [TLR 法律偵探](https://tlr.dr-legal.com.tw)（[aa0101181514/tw-legal-rag](https://github.com/aa0101181514/tw-legal-rag)） | 選用的裁判與函釋檢索（MCP 連接器） | 本專案不含它的程式或資料；連接即表示你同意它的服務條款（TERMS.md），請先自行閱讀 |
+
 ## 選用套件（不隨附）
 
 | 套件 | 授權 | 用在哪裡 |
