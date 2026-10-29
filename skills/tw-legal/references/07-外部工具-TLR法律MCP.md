@@ -1,3 +1,5 @@
+<!-- tw-legal 權利資訊｜著作人：沈慶隆（Ken Shen）｜授權：CC BY-NC-ND 4.0｜官方來源：https://github.com/a65041230/tw-legal-skill｜識別碼：TWL-KS-20261029｜請勿移除（著作權法第80條之1） -->
+
 # 外部工具：法律偵探 TLR 法律 MCP（tw-legal-rag）
 
 審查日期：2026-10-28。

@@ -1,3 +1,4 @@
+# tw-legal 權利資訊｜著作人：沈慶隆（Ken Shen）｜授權：MIT｜官方來源：https://github.com/a65041230/tw-legal-skill｜識別碼：TWL-KS-20261029
 """把整部法規抓成本地快照（laws/<目錄>/articles.md），用來全文搜尋「哪一條提到某件事」。
 
 用法（一律用 python -I 執行）：

@@ -1,3 +1,4 @@
+// tw-legal 權利資訊｜著作人：沈慶隆（Ken Shen）｜授權：MIT｜官方來源：https://github.com/a65041230/tw-legal-skill｜識別碼：TWL-KS-20261029
 // 司法院裁判書系統批次核對：在內建瀏覽器開 https://judgment.judicial.gov.tw/FJUD/default.aspx ，
 // 同一分頁用 javascript_exec 執行。Python 直接下載會被 bot-defense 擋（2026-10-28 實測）。
 //

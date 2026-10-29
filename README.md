@@ -2,7 +2,7 @@
 
 讓 Claude 用律師的查證方法處理台灣的法律問題：條文和裁判一律回官方原文核對，查不到就說查不到。
 
-[![授權](https://img.shields.io/badge/%E6%8E%88%E6%AC%8A-CC%20BY--NC--SA%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hant)
+[![授權](https://img.shields.io/badge/%E6%8E%88%E6%AC%8A-CC%20BY--NC--ND%204.0-lightgrey)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hant)
 ![法條基準日](https://img.shields.io/badge/%E6%B3%95%E6%A2%9D%E5%9F%BA%E6%BA%96%E6%97%A5-2026--10--28-blue)
 ![適用](https://img.shields.io/badge/%E9%81%A9%E7%94%A8-Claude%20Code-orange)
 
@@ -201,7 +201,7 @@ claude plugin install tw-legal@tw-legal-skill
 
 | 內容 | 授權 |
 |---|---|
-| SKILL.md、references/ 與說明文件 | [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hant)（姓名標示─非商業性─相同方式分享） |
+| SKILL.md、references/ 與說明文件 | [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hant)（姓名標示─非商業性─禁止改作） |
 | scripts/ | MIT：通用工具（抓法條、檢查 PDF），不含法律知識，可以自由使用 |
 | laws/ 的法條原文 | 法律不得為著作權之標的（著作權法第 9 條），本專案不主張權利 |
 | 改寫自 Apache-2.0 專案的部分 | 見 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) |
@@ -213,11 +213,20 @@ claude plugin install tw-legal@tw-legal-skill
 - 免費幫家人、朋友查詢
 - 學校教學、學生自學、學術研究
 - 非營利團體免費協助民眾
+- 為了自己使用而修改（修改後的版本不能分享）
 
 **不可以**
 - 律師事務所、法律工作室、代書、顧問公司等營業使用
 - 收費代寫書狀、收費法律諮詢
 - 包裝成付費的產品、課程或服務
+- 分享或公開修改過的版本
+- 移除或變更各檔案開頭的權利資訊
+
+## 官方版本與驗證
+
+- **官方版本只在這裡：**https://github.com/a65041230/tw-legal-skill。在其他地方看到修改版、收費版，或自稱經作者授權的版本，請來信告知。
+- **權利資訊：**每個檔案開頭都有「tw-legal 權利資訊」，寫明著作人、授權、官方來源與識別碼 `TWL-KS-20261029`。這屬於著作權法所稱的權利管理電子資訊，不得移除或變更（著作權法第 80 條之 1）。
+- **確認檔案沒被改過：**在專案資料夾執行 `sha256sum -c MANIFEST.sha256`（Windows 可用 Git Bash），每一行都是 OK 才是官方原版。
 
 ## 致謝
 

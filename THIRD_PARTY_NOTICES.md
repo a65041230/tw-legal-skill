@@ -4,7 +4,7 @@
 
 | 內容 | 授權 |
 |---|---|
-| `skills/tw-legal/` 的 SKILL.md、references/，以及 README、DISCLAIMER 等說明文件 | CC BY-NC-SA 4.0，全文見 [LICENSE](LICENSE) |
+| `skills/tw-legal/` 的 SKILL.md、references/，以及 README、DISCLAIMER 等說明文件 | CC BY-NC-ND 4.0，全文見 [LICENSE](LICENSE) |
 | `skills/tw-legal/scripts/` | MIT，全文見 [scripts/LICENSE](skills/tw-legal/scripts/LICENSE) |
 | `skills/tw-legal/laws/` 的法條原文 | 法律不得為著作權之標的（著作權法第 9 條），本專案不主張權利；內容取自全國法規資料庫 |
 

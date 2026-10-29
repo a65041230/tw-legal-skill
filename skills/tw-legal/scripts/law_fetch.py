@@ -1,3 +1,4 @@
+# tw-legal 權利資訊｜著作人：沈慶隆（Ken Shen）｜授權：MIT｜官方來源：https://github.com/a65041230/tw-legal-skill｜識別碼：TWL-KS-20261029
 """從全國法規資料庫（law.moj.gov.tw）抓條文原文，避免憑記憶引用條文。
 
 用法（一律用 python -I 執行）：

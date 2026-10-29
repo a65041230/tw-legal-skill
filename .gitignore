@@ -7,6 +7,8 @@
 
 # 2. 放行公開的檔案與資料夾
 !/.gitignore
+!/.gitattributes
+!/MANIFEST.sha256
 !/README.md
 !/DISCLAIMER.md
 !/LICENSE

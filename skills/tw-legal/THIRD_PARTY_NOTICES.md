@@ -1,3 +1,5 @@
+<!-- tw-legal 權利資訊｜著作人：沈慶隆（Ken Shen）｜授權：CC BY-NC-ND 4.0｜官方來源：https://github.com/a65041230/tw-legal-skill｜識別碼：TWL-KS-20261029｜請勿移除（著作權法第80條之1） -->
+
 # 第三方來源與授權
 
 本 skill 有部分內容改寫自下列開源專案，兩者都採 Apache License 2.0。改寫的地方都在檔案開頭註明出處與修改內容。
