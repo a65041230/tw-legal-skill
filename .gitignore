@@ -1,0 +1,107 @@
+# tw-legal-skill 的 .gitignore
+# 做法：預設全部不收，只放行公開的檔案（白名單）；再擋掉不該公開的檔案類型與檔名。
+# .gitignore 只擋「檔案」，擋不了檔案「內容」裡的個資；內容由 pre-commit 檢查。
+
+# 1. 預設全部不收
+/*
+
+# 2. 放行公開的檔案與資料夾
+!/.gitignore
+!/README.md
+!/DISCLAIMER.md
+!/LICENSE
+!/THIRD_PARTY_NOTICES.md
+!/CHANGELOG.md
+!/.claude-plugin/
+!/.github/
+!/LICENSES/
+!/docs/
+!/skills/
+
+# 3. 放行的資料夾裡，這些類型一律不收
+# 3.1 程式產物與暫存
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+*.bak
+*.orig
+*.swp
+*~
+# 3.2 文件、表格、網頁存檔
+*.pdf
+*.doc
+*.docx
+*.odt
+*.rtf
+*.xls
+*.xlsx
+*.csv
+*.ppt
+*.pptx
+*.html
+*.htm
+*.mhtml
+*.txt
+# 3.3 圖片、影音、壓縮檔
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.heic
+*.bmp
+*.tif
+*.tiff
+*.svg
+*.mp4
+*.mov
+*.m4a
+*.mp3
+*.wav
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+# 3.4 帳密、金鑰、資料庫
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.sqlite
+*.db
+# 3.5 系統與編輯器
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+.vscode/
+.idea/
+.obsidian/
+.claude/
+
+# 4. 例外：說明用的圖片與授權全文（圖片一律用英文檔名）
+!/docs/images/*.png
+!/docs/images/*.gif
+!/docs/images/*.svg
+!/LICENSES/*.txt
+
+# 5. 檔名有這些字的，不管在哪裡都不收（放在最後，才能蓋過第 4 段的例外）
+*不寄法院*
+*內部_*
+*私人*
+*private*
+*舊版*
+*原版*
+*勿印*
+*不要印*
+*要印這個*
+*列印包*
+*自己看*
+*證[0-9]*
+*截圖*
+*原檔*
+*收據*

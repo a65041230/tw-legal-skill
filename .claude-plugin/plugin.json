@@ -1,0 +1,12 @@
+{
+  "name": "tw-legal",
+  "version": "0.1.0",
+  "description": "台灣法律自救助手：條文與裁判一律回官方原文核對（全國法規資料庫、司法院裁判書系統），可搭配 TLR 法律檢索。僅供個人自救與教育使用，不得用於商業及工作室。",
+  "author": {
+    "name": "沈慶隆 (Ken Shen)",
+    "url": "https://github.com/a65041230"
+  },
+  "repository": "https://github.com/a65041230/tw-legal-skill",
+  "license": "CC-BY-NC-SA-4.0",
+  "keywords": ["taiwan", "legal", "law", "rag", "mcp"]
+}

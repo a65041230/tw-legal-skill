@@ -1,0 +1,15 @@
+{
+  "name": "tw-legal-skill",
+  "description": "台灣法律自救助手（tw-legal）的外掛市集。",
+  "owner": {
+    "name": "沈慶隆 (Ken Shen)",
+    "url": "https://github.com/a65041230"
+  },
+  "plugins": [
+    {
+      "name": "tw-legal",
+      "source": "./",
+      "description": "台灣法律自救助手：條文與裁判一律回官方原文核對。僅供個人自救與教育使用。"
+    }
+  ]
+}
