@@ -16,6 +16,7 @@ import datetime
 import html
 import json
 import re
+import ssl
 import sys
 import time
 import urllib.parse
@@ -23,6 +24,10 @@ import urllib.request
 
 BASE = "https://law.moj.gov.tw"
 HEADERS = {"User-Agent": "Mozilla/5.0 (tw-legal law_fetch)"}
+# Python 3.13 起預設開嚴格模式（VERIFY_X509_STRICT），本站的憑證鏈過不了；
+# 只關這一項，憑證鏈與主機名稱照樣驗證
+CTX = ssl.create_default_context()
+CTX.verify_flags &= ~ssl.VERIFY_X509_STRICT
 
 
 def get(url, tries=3):
@@ -30,7 +35,7 @@ def get(url, tries=3):
     for i in range(tries):
         try:
             req = urllib.request.Request(url, headers=HEADERS)
-            with urllib.request.urlopen(req, timeout=30) as r:
+            with urllib.request.urlopen(req, timeout=30, context=CTX) as r:
                 return r.read().decode("utf-8", "replace")
         except Exception:
             if i == tries - 1:
@@ -131,7 +136,9 @@ def main():
         try:
             r = article(pcode.strip(), flno.strip())
         except Exception as e:  # 網路錯誤要明講，不能當成查到
-            print(f"!! {item} 查詢失敗：{e}\n")
+            print(f"!! {item} 官方查詢失敗：{e}")
+            print(f"   不得憑記憶引用。先用瀏覽器開 {BASE}/LawClass/LawSingle.aspx?pcode={pcode.strip()}&flno={flno.strip()}；"
+                  "連不上才用本地快照，並標明是快照與快照日期。\n")
             continue
         results.append(r)
         if not r["text"]:
